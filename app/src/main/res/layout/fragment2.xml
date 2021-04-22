@@ -47,7 +47,7 @@
         android:selectAllOnFocus="true"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem quam, consequat a sem in, ultricies facilisis sapien. Morbi vitae velit a urna ornare varius. Morbi quis faucibus odio."
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

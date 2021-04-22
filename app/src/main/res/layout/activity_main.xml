@@ -21,7 +21,7 @@
             android:id="@+id/logo"
             android:layout_width="180dp"
             android:layout_height="77dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/lsbu_logo"
@@ -31,18 +31,20 @@
         <TextView
             android:layout_width="327dp"
             android:layout_height="107dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="16dp"
-            android:text="Business Solutions Center\n Free support to local businesses\n from Business Student Advisors"
+            android:text="Business Solutions Center
+            Free support to local businesses
+            from Business Student Advisors"
             android:textColor="@color/white"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="#f0f1ee"
@@ -56,7 +58,8 @@
             android:layout_height="wrap_content"
             android:text="Welcome John Doe"
             android:textColor="@color/purple"
-            tools:layout_editor_absoluteX="50dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="11dp" />
 
         <TextView
@@ -66,19 +69,75 @@
             android:text="Contact"
             android:textColor="@color/purple"
             app:layout_constraintEnd_toEndOf="@+id/user"
-            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintHorizontal_bias="0.671"
             app:layout_constraintStart_toEndOf="@+id/MeetTheTeam"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="11dp" />
 
         <TextView
             android:id="@+id/MeetTheTeam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="72dp"
+            android:layout_marginEnd="16dp"
             android:text="Meet The Team"
             android:textColor="@color/purple"
             app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="11dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:src="@drawable/stockimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:navGraph="@navigation/mobile_navigation"
+            tools:layout_editor_absoluteX="2dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintTop_toBottomOf="@+id/events">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How it works"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -94,17 +153,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
