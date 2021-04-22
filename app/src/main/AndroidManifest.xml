@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bsc_app">
         <activity
+            android:name=".navigation"
+            android:label="@string/title_activity_navigation"></activity>
+        <activity
             android:name=".ui.login.login"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
