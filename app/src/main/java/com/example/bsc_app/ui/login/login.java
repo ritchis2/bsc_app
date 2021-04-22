@@ -26,7 +26,7 @@ import com.example.bsc_app.R;
 import com.example.bsc_app.ui.login.LoginViewModel;
 import com.example.bsc_app.ui.login.LoginViewModelFactory;
 
-public class LoginActivity extends AppCompatActivity {
+public class login extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
