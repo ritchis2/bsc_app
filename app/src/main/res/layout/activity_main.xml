@@ -52,38 +52,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-        <TextView
+        <Button
             android:id="@+id/user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome John Doe"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="158dp"
+            android:layout_height="40dp"
+            android:text="@id+/name"
             android:textColor="@color/purple"
+            app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="11dp" />
+            tools:layout_editor_absoluteX="1dp" />
 
-        <TextView
+        <Button
             android:id="@+id/contact"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contact"
             android:textColor="@color/purple"
             app:layout_constraintEnd_toEndOf="@+id/user"
-            app:layout_constraintHorizontal_bias="0.671"
+            app:layout_constraintHorizontal_bias="0.723"
             app:layout_constraintStart_toEndOf="@+id/MeetTheTeam"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="11dp" />
+            tools:layout_editor_absoluteY="0dp" />
 
-        <TextView
+        <Button
             android:id="@+id/MeetTheTeam"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="8dp"
             android:text="Meet The Team"
             android:textColor="@color/purple"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="11dp" />
+            tools:layout_editor_absoluteY="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
