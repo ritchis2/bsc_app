@@ -13,37 +13,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bsc_app">
-        <!-- <uses-library
+        <uses-library
             android:name="com.google.android.wearable"
-            android:required="true" />
+            android:required="false" />
 
 
-               Set to true if your app is Standalone, that is, it does not require the handheld
-               app to run.
 
         <meta-data
             android:name="com.google.android.wearable.standalone"
-            android:value="true" /> -->
+            android:value="false" />
 
 
         <activity
             android:name=".RegisterUser"
             android:label="@string/title_activity_register_user">
+        </activity>
+
+        <activity
+            android:name=".Login">
+        </activity>
+
+        <activity
+            android:name=".Onboarding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+             </intent-filter>
         </activity>
+
         <activity
             android:name=".navigation"
             android:label="@string/title_activity_navigation" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".MainActivity">
         </activity>
     </application>
 

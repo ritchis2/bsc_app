@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -55,34 +58,35 @@
         <Button
             android:id="@+id/user"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="158dp"
-            android:layout_height="40dp"
-            android:text="@id+/name"
+            android:layout_width="160dp"
+            android:layout_height="39dp"
+            android:text="userName"
             android:textColor="@color/purple"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="1dp" />
+            tools:layout_editor_absoluteX="-22dp" />
 
         <Button
-            android:id="@+id/contact"
+            android:id="@+id/meetTheTeam"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact"
+            android:text="Meet the Team"
             android:textColor="@color/purple"
             app:layout_constraintEnd_toEndOf="@+id/user"
-            app:layout_constraintHorizontal_bias="0.723"
-            app:layout_constraintStart_toEndOf="@+id/MeetTheTeam"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toEndOf="@+id/logout"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="0dp" />
 
         <Button
-            android:id="@+id/MeetTheTeam"
+            android:id="@+id/logout"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="Meet The Team"
+            android:layout_marginEnd="4dp"
+            android:onClick="logout"
+            android:text="Logout"
             android:textColor="@color/purple"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints"
@@ -103,26 +107,23 @@
             android:layout_height="wrap_content"
             android:text="Events"
             android:textSize="15dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.082" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="380dp"
             android:layout_height="250dp"
             android:src="@drawable/stockimg"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <fragment
-            android:id="@+id/nav_host_fragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:navGraph="@navigation/mobile_navigation"
-            tools:layout_editor_absoluteX="2dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -155,6 +156,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
 
 
 

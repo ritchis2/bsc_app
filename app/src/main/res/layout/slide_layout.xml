@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/slideLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
@@ -10,11 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".ui.login.login"
     >
 
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="201dp"
         android:layout_height="101dp"
         app:layout_constraintVertical_bias="0.3"
@@ -29,40 +29,39 @@
 
 
     <TextView
-        android:id="@+id/welcome"
+        android:id="@+id/heading"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="316dp"
         android:layout_marginEnd="24dp"
-        android:selectAllOnFocus="true"
-        android:text="Welcome to\n Business Solutions Center\n Free support to local businesses\n from Business Student Advisors"
-        android:textSize="20dp"
         android:gravity="center"
+        android:selectAllOnFocus="true"
+        android:text=""
         android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/next1"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="64dp"
-        android:background="#14b5bf"
-        android:enabled="true"
-        android:text="Next"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:selectAllOnFocus="true"
+        android:text="lorem ipsum"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintTop_toTopOf="@+id/heading" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
