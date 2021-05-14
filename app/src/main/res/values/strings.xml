@@ -17,6 +17,28 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_register_user">RegisterUser</string>
     <string name="title_contact">Meet the Team</string>
+
+
+    // contact_layout strings
+    <string name="desc">The Business Solutions Centre team are eager and well-equipped to provide you with business solutions. Their areas of interest and expertise span a huge range of today\'s key business concerns.</string>
+    <string name="hanna">Hanna is studying Business Management with Project Management. As an advisor, she is passionate about helping others grow and reach their goals. She has been working on the Twitter strategy, writing reports and help sheets, and delivered virtual workshops. In short, Hanna believes the key to business success is consistency, communication and listening to stakeholders. Her areas of interest include project management, marketing, human behaviour, technology, economics, and the environment."</string>
+    <string name="sofia">Sofia is studying BA (Hons) Business Management and her areas of interest include brand management, leadership, sustainability, and entrepreneurship. Sofia believes that precision and efficiency is the key to building a strong foundation in every business, while vision and close team building are necessary for its success. Whilst working for the Business Solutions Centre, Sofia has collaborated on creating content about Market Research and Consumer Behaviour, that was used to help in the relocation of traders from the Elephant and Castle Shopping Centre. Moreover, she has interviewed small business owners and created tailored reports on small businesses."</string>
+    <string name="ariana">Ariana is studying BA (Hons) Marketing with Advertising and Digital Communications and her particular areas of interest include brand management, marketing research and advertising.
+
+             Ariana believes the key to a successful business is a combination of a well-researched business plan, implementing a customer-centric approach, targeted marketing, a memorable brand, a strong network and most important of all, patience!
+
+                Whilst working for the Business Solutions Centre, Ariana has been working with clients and businesses from the Elephant &amp; Castle Shopping Centre on Marketing subjects, helped organise a Social Media workshop pre-pandemic and managed the Business Solutions Centre Twitter account." </string>
+    <string name="max">Max is a third year Accounting and Finances student.
+
+Studying Accounting and Finance has given Max the chance to explore different subject interests. He particularly enjoys Financial Accounting and Finance/Investment.
+
+Max was first inspired to study Accounting and Finance because of his love for numbers, to view data in a numerical form and through statistics. Max also believes the flexibility in an Accounting and Finance degree upon graduation is a huge advantage.
+
+Max believes that within business the key to success is to please all key stake holders, to build up a personal relationship between a client and adviser and that this is achieved through outstanding interpersonal skills.
+
+After graduating from LSBU Max is hoping to qualify as a chartered accountant and to work in Finance in The City." />
+    </string>
+
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
