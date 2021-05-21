@@ -41,6 +41,14 @@
         </activity>
 
         <activity
+            android:name=".Dashboard">
+        </activity>
+
+        <activity
+            android:name=".Service">
+        </activity>
+
+        <activity
             android:name=".Onboarding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

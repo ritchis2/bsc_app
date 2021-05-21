@@ -48,13 +48,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
+                    case R.id.navigation_home:
+                        return true;
                     case R.id.navigation_contact:
                         startActivity(new Intent(getApplicationContext()
                         ,Contact.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.navigation_home:
+                    case R.id.navigation_notifications:
+                        startActivity(new Intent(getApplicationContext(),Service.class));
+                        overridePendingTransition(0,0);
                         return true;
+                    case R.id.navigation_dashboard:
+                        startActivity(new Intent(getApplicationContext(),Dashboard.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
                 }
                 return false;
             }

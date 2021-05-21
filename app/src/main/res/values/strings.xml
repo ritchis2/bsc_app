@@ -4,7 +4,7 @@
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in_short">Login</string>
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
@@ -20,7 +20,7 @@
 
 
     // contact_layout strings
-    <string name="desc">The Business Solutions Centre team are eager and well-equipped to provide you with business solutions. Their areas of interest and expertise span a huge range of today\'s key business concerns.</string>
+    <string name="desc">The Business Solutions Centre team are eager and well-equipped to provide you with business solutions. Their areas of interest and expertise span a huge range of today\s key business concerns.</string>
     <string name="hanna">Hanna is studying Business Management with Project Management. As an advisor, she is passionate about helping others grow and reach their goals. She has been working on the Twitter strategy, writing reports and help sheets, and delivered virtual workshops. In short, Hanna believes the key to business success is consistency, communication and listening to stakeholders. Her areas of interest include project management, marketing, human behaviour, technology, economics, and the environment."</string>
     <string name="sofia">Sofia is studying BA (Hons) Business Management and her areas of interest include brand management, leadership, sustainability, and entrepreneurship. Sofia believes that precision and efficiency is the key to building a strong foundation in every business, while vision and close team building are necessary for its success. Whilst working for the Business Solutions Centre, Sofia has collaborated on creating content about Market Research and Consumer Behaviour, that was used to help in the relocation of traders from the Elephant and Castle Shopping Centre. Moreover, she has interviewed small business owners and created tailored reports on small businesses."</string>
     <string name="ariana">Ariana is studying BA (Hons) Marketing with Advertising and Digital Communications and her particular areas of interest include brand management, marketing research and advertising.
@@ -39,10 +39,72 @@ Max believes that within business the key to success is to please all key stake 
 After graduating from LSBU Max is hoping to qualify as a chartered accountant and to work in Finance in The City." />
     </string>
 
+    <string name="bscinfo">Students of LSBU Business School offer a free drop-in service to local businesses. A trained team of Student Advisers can help your business with advice on: small business accounting, marketing, social media and IT solutions. Student Advisers are backed up by University professional and academic staff.</string>
+
+    <string name="involve">All Business Solutions Advisers are students in LSBU Business School. In addition to their up-to-date subject knowledge, the Advisers receive additional training and continuous support from LSBU staff to fully equip them to offer consultancy services in the Business Solutions Centre.
+
+    The bespoke training all advisers must complete includes:
+
+    professionalism and customer service
+    advanced communication
+    business report writing
+    working in teams to solve real live business issues
+
+    Student Advisers have the opportunity to:</string>
+
+    <string name="contactinfo"> <br> London South Bank University </br>
+    <br> Business Solutions Centre </br>
+        <br> Clarence Centre for Enterprise and Innovation </br>
+    <br> 126 London Road </br>
+    <br>SE1 0AE </br>
+
+     <br>Our email address: solutions@lsbu.ac.uk</br>   </string>
+
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_main2">MainActivity2</string>
+
+    // Service Layout Strings
+
+    <string name="introtext">The Business Solutions Centre is a free student-led service for local businesses and entrepreneurs.
+
+    If you have identified an area of the business mix that you need support in, a particular problem that you want to solve, or an opportunity that you want to evaluate, the student-led Business Solutions Centre can help you.</string>
+
+    <string name="challTitle">
+    Here are some of the challenges that our clients typically face:
+    </string>
+
+    <string name="challTxt">
+    How can I use social media to support business growth?
+    How can I write a business plan?
+    How can I seek potential funding or resources?
+    How can I market my business on a low marketing budget?
+    How can I manage my business sales and expenses?
+    </string>
+
+    <string name="worksTitle">
+    How it works
+    </string>
+
+    <string name="worksTxt">
+    </string>
+
+    <string name="areasTitle">
+    Areas of expertise
+    </string>
+
+    <string name="aresTxt">
+        Business development and planning
+    Tax and small business accounting
+    Marketing and social media
+    Forecasting and costing
+    Access to finance
+    Project management
+    Consumer behaviour and brand management
+    </string>
+
+
 </resources>
